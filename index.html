@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>圈小猫小游戏</title>
+  <script src="./js/phaser.min.js"></script>
+  <script src="./js/catch-the-cat.js"></script>
+</head>
+<body>
+  <div id="catch-the-cat">
+    <canvas width="570" height="501"></canvas>
+  </div>
+</body>
+<script>
+  window.game = new CatchTheCatGame({
+    w: 11,
+    h: 11,
+    r: 20,
+    backgroundColor: 0xeeeeee,
+    parent: 'catch-the-cat',
+    statusBarAlign: 'center',
+    credit: '木纹'
+  });
+</script>
+</html>
